@@ -43,7 +43,7 @@ function init(bundle, parent, options = {}) {
 
 
   // Load the initial environment
-  r360.compositor.setBackground(r360.getAssetURL('360_world.jpg'));
+  r360.compositor.setBackground('https://images.unsplash.com/photo-1505252772853-08ed4d526ceb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjk4OTYxfQ');
 
 
   KeyboardModule.setInstance(r360);

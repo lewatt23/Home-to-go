@@ -1,5 +1,6 @@
 import * as React from 'react';
-
+import Unsplash from 'unsplash-js';
+import {Environment} from 'react-360';
 /**
  * If you want to share data between multiple root components, you'll need a
  * global store like Redux. This is similar to building a web app where you
@@ -22,7 +23,18 @@ function updateComponents() {
 }
 
 //function tha init all the api calls
-export function initialize(apiKey,name) {
+export function initialize(apiKey,unKey,name) {
+
+    //
+const unsplash = new Unsplash({ accessKey: unKey });
+
+unsplash.photos.getRandomPhoto({ collections:[8857721] })
+  .then(res => res.json())
+  .then(res => {
+
+    Environment.setBackgroundImage(res.urls.raw);
+  });
+
 
    //we search for name string
    const search = name?name:'Moscow';

@@ -34,7 +34,10 @@ const styles = StyleSheet.create({
     height: 600,
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+    borderWidth:5,
+    borderRadius:20,
+    borderColor:'white'
   },
   image:{
     width: '100%',

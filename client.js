@@ -1,7 +1,7 @@
 // This file contains the boilerplate to execute your React app.
 // If you want to modify your application's content, start in "index.js"
 
-import {ReactInstance,Surface,NativeModules, Location } from 'react-360-web';
+import {ReactInstance,Surface,NativeModules, Location,asset} from 'react-360-web';
 import KeyboardModule from 'react-360-keyboard/KeyboardModule';
 
 

@@ -1,3 +1,3 @@
 # Home to  go 
 
-Visit your future home using react360, facebook api and maps.
+Search for cities and homes around you.

@@ -55,7 +55,7 @@ export function initialize(apiKey,name) {
                     text:"Location not found"
                 },
                 preview:{
-                    source :''
+                    source :'https://upload.wikimedia.org/wikipedia/commons/7/78/Erreur_404.png'
                 }
             }
     
@@ -74,7 +74,7 @@ export function initialize(apiKey,name) {
                 text:"Location not found"
             },
             preview:{
-                source :''
+                source :'https://upload.wikimedia.org/wikipedia/commons/7/78/Erreur_404.png'
             }
         }
 

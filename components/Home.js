@@ -4,6 +4,7 @@ import {
   StyleSheet,
   Text,
   View,
+  asset,
   VrButton,
   NativeModules,
   AppRegistry
@@ -15,6 +16,20 @@ import { registerKeyboard } from "react-360-keyboard";
 AppRegistry.registerComponent(...registerKeyboard);
 
 export default class Home extends React.Component {
+
+ componentDidMount(){
+
+  const {AudioModule} = NativeModules;
+
+AudioModule.playEnvironmental({
+  source: asset('There_Is_a_Beautiful_Place.mp3'),
+  volume: 0.8, // play at 3/10 original volume
+});
+
+
+ }
+
+
   onClick() {
     NativeModules.Keyboard.startInput({
       placeholder: "Enter your location"
